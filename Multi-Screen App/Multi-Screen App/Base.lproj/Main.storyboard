@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DFB-r5-yxu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GoT Name Creator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="GoT Name Creator" id="BYZ-38-t0r" customClass="ViewController" customModule="Multi_Screen_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cm3-yl-PtX">
+                                <rect key="frame" x="20" y="108" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-Fg-Pri">
+                                <rect key="frame" x="20" y="145" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXg-Cj-yod">
+                                <rect key="frame" x="20" y="199" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UtH-St-skT">
+                                <rect key="frame" x="20" y="236" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lg6-AE-rhc">
+                                <rect key="frame" x="20" y="290" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OCW-PG-AaS">
+                                <rect key="frame" x="20" y="327" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Lannister"/>
+                                    <segment title="Tully"/>
+                                    <segment title="Tyrell"/>
+                                    <segment title="Stark"/>
+                                    <segment title="Baratheon"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2F-DO-xXt">
+                                <rect key="frame" x="20" y="818" width="374" height="44"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zm3-NQ-uU9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Create House Information">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a2F-DO-xXt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0g4-Ua-lfS"/>
+                            <constraint firstItem="OCW-PG-AaS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0yc-fe-TSG"/>
+                            <constraint firstItem="UtH-St-skT" firstAttribute="top" secondItem="lXg-Cj-yod" secondAttribute="bottom" constant="8" id="1ti-Ck-oPo"/>
+                            <constraint firstItem="YVJ-Fg-Pri" firstAttribute="top" secondItem="Cm3-yl-PtX" secondAttribute="bottom" constant="8" id="4Yf-8z-yuP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a2F-DO-xXt" secondAttribute="bottom" id="Cdy-Jz-LLT"/>
+                            <constraint firstItem="UtH-St-skT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="F5z-VW-rhM"/>
+                            <constraint firstItem="Cm3-yl-PtX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="H7g-Di-CoX"/>
+                            <constraint firstItem="lg6-AE-rhc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HUX-Z8-Ufo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YVJ-Fg-Pri" secondAttribute="trailing" constant="20" id="Ha8-Xk-gIO"/>
+                            <constraint firstItem="Cm3-yl-PtX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LOW-Gn-Azp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a2F-DO-xXt" secondAttribute="trailing" constant="20" id="Mdl-Hi-NHM"/>
+                            <constraint firstItem="YVJ-Fg-Pri" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Uyy-xS-VsZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OCW-PG-AaS" secondAttribute="trailing" constant="20" id="aQD-Ag-BIf"/>
+                            <constraint firstItem="lg6-AE-rhc" firstAttribute="top" secondItem="UtH-St-skT" secondAttribute="bottom" constant="20" id="e7a-8b-wwS"/>
+                            <constraint firstItem="lXg-Cj-yod" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fSQ-tA-Ok5"/>
+                            <constraint firstItem="lXg-Cj-yod" firstAttribute="top" secondItem="YVJ-Fg-Pri" secondAttribute="bottom" constant="20" id="gCD-gE-Fut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lXg-Cj-yod" secondAttribute="trailing" constant="20" id="jmN-u0-yl3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UtH-St-skT" secondAttribute="trailing" constant="20" id="mgN-v7-0uH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cm3-yl-PtX" secondAttribute="trailing" constant="20" id="vOx-oA-zQd"/>
+                            <constraint firstItem="OCW-PG-AaS" firstAttribute="top" secondItem="lg6-AE-rhc" secondAttribute="bottom" constant="8" id="vd9-4e-CsV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lg6-AE-rhc" secondAttribute="trailing" constant="20" id="wfm-wX-pBc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GoT Name Creator" id="t2B-11-8ZE"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="UtH-St-skT" id="vuT-Sk-4hO"/>
+                        <outlet property="houseSegmentedControl" destination="OCW-PG-AaS" id="qd0-Iz-axd"/>
+                        <outlet property="nameTextField" destination="YVJ-Fg-Pri" id="Iny-Jw-beo"/>
+                        <segue destination="xH2-9U-rtu" kind="show" identifier="createHouseSe" id="5bJ-OW-hnA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+        </scene>
+        <!--House Details-->
+        <scene sceneID="Ipm-zU-diX">
+            <objects>
+                <viewController id="xH2-9U-rtu" customClass="HouseViewController" customModule="Multi_Screen_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A8p-fr-r6V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6b-t0-gsw">
+                                <rect key="frame" x="20" y="120" width="124" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFs-PS-SeE">
+                                <rect key="frame" x="20" y="169" width="124" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yta-Kd-1sY">
+                                <rect key="frame" x="20" y="213" width="124" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AsE-ZI-jZy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l6b-t0-gsw" firstAttribute="top" secondItem="AsE-ZI-jZy" secondAttribute="top" constant="32" id="2Gd-ID-rWe"/>
+                            <constraint firstItem="AsE-ZI-jZy" firstAttribute="trailing" secondItem="Yta-Kd-1sY" secondAttribute="trailing" constant="270" id="7Vy-03-rvV"/>
+                            <constraint firstItem="Yta-Kd-1sY" firstAttribute="top" secondItem="NFs-PS-SeE" secondAttribute="bottom" constant="20" id="8CO-6y-7aF"/>
+                            <constraint firstItem="NFs-PS-SeE" firstAttribute="leading" secondItem="AsE-ZI-jZy" secondAttribute="leading" constant="20" id="93L-tx-cC3"/>
+                            <constraint firstItem="Yta-Kd-1sY" firstAttribute="leading" secondItem="AsE-ZI-jZy" secondAttribute="leading" constant="20" id="FqV-QF-NJt"/>
+                            <constraint firstItem="NFs-PS-SeE" firstAttribute="top" secondItem="l6b-t0-gsw" secondAttribute="bottom" constant="20" id="MMD-vI-0zP"/>
+                            <constraint firstItem="AsE-ZI-jZy" firstAttribute="trailing" secondItem="l6b-t0-gsw" secondAttribute="trailing" constant="270" id="O6d-kU-Xjc"/>
+                            <constraint firstItem="AsE-ZI-jZy" firstAttribute="trailing" secondItem="NFs-PS-SeE" secondAttribute="trailing" constant="270" id="b2u-dG-dd7"/>
+                            <constraint firstItem="l6b-t0-gsw" firstAttribute="leading" secondItem="AsE-ZI-jZy" secondAttribute="leading" constant="20" id="l8u-Dy-O9O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="House Details" id="WJD-G7-CKd"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="NFs-PS-SeE" id="93W-te-z9i"/>
+                        <outlet property="houseLabel" destination="Yta-Kd-1sY" id="OMT-Oc-Gr4"/>
+                        <outlet property="nameLabel" destination="A8p-fr-r6V" id="iND-0I-842"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zn-mT-TFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SLv-iV-N0L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DFB-r5-yxu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BeM-9N-rwY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pGw-B3-KUq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCU-2M-jE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
