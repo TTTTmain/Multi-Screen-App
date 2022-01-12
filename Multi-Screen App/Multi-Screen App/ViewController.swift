@@ -18,6 +18,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "createHouseSegue" {
+            let name = nameTextField.text ?? ""
+            let house = houseSegmentedControl.titleForSegment(at: houseSegmentedControl.selectedSegmentIndex) ?? ""
+            let age = Int(ageTextField.text ?? "") ?? 0
+            
+            let newPerson = Person(name: name, house: house, age: age)
+            
+            let destination = segue.destination as! HouseViewController
+            
+            destination.person = newPerson
+        }
+    }
 
 
 }

@@ -66,6 +66,9 @@
                                 <state key="normal" title="Create House Information">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="xH2-9U-rtu" kind="show" identifier="createHouseSegue" id="sds-6E-R2X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -99,7 +102,6 @@
                         <outlet property="ageTextField" destination="UtH-St-skT" id="vuT-Sk-4hO"/>
                         <outlet property="houseSegmentedControl" destination="OCW-PG-AaS" id="qd0-Iz-axd"/>
                         <outlet property="nameTextField" destination="YVJ-Fg-Pri" id="Iny-Jw-beo"/>
-                        <segue destination="xH2-9U-rtu" kind="show" identifier="createHouseSe" id="5bJ-OW-hnA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,19 +117,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6b-t0-gsw">
-                                <rect key="frame" x="20" y="120" width="124" height="29"/>
+                                <rect key="frame" x="20" y="120" width="374" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFs-PS-SeE">
-                                <rect key="frame" x="20" y="169" width="124" height="24"/>
+                                <rect key="frame" x="20" y="169" width="374" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yta-Kd-1sY">
-                                <rect key="frame" x="20" y="213" width="124" height="24"/>
+                                <rect key="frame" x="20" y="213" width="374" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -137,13 +139,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="l6b-t0-gsw" firstAttribute="top" secondItem="AsE-ZI-jZy" secondAttribute="top" constant="32" id="2Gd-ID-rWe"/>
-                            <constraint firstItem="AsE-ZI-jZy" firstAttribute="trailing" secondItem="Yta-Kd-1sY" secondAttribute="trailing" constant="270" id="7Vy-03-rvV"/>
+                            <constraint firstItem="AsE-ZI-jZy" firstAttribute="trailing" secondItem="Yta-Kd-1sY" secondAttribute="trailing" constant="20" id="7Vy-03-rvV"/>
                             <constraint firstItem="Yta-Kd-1sY" firstAttribute="top" secondItem="NFs-PS-SeE" secondAttribute="bottom" constant="20" id="8CO-6y-7aF"/>
                             <constraint firstItem="NFs-PS-SeE" firstAttribute="leading" secondItem="AsE-ZI-jZy" secondAttribute="leading" constant="20" id="93L-tx-cC3"/>
                             <constraint firstItem="Yta-Kd-1sY" firstAttribute="leading" secondItem="AsE-ZI-jZy" secondAttribute="leading" constant="20" id="FqV-QF-NJt"/>
                             <constraint firstItem="NFs-PS-SeE" firstAttribute="top" secondItem="l6b-t0-gsw" secondAttribute="bottom" constant="20" id="MMD-vI-0zP"/>
-                            <constraint firstItem="AsE-ZI-jZy" firstAttribute="trailing" secondItem="l6b-t0-gsw" secondAttribute="trailing" constant="270" id="O6d-kU-Xjc"/>
-                            <constraint firstItem="AsE-ZI-jZy" firstAttribute="trailing" secondItem="NFs-PS-SeE" secondAttribute="trailing" constant="270" id="b2u-dG-dd7"/>
+                            <constraint firstItem="AsE-ZI-jZy" firstAttribute="trailing" secondItem="l6b-t0-gsw" secondAttribute="trailing" constant="20" id="O6d-kU-Xjc"/>
+                            <constraint firstItem="AsE-ZI-jZy" firstAttribute="trailing" secondItem="NFs-PS-SeE" secondAttribute="trailing" constant="20" id="b2u-dG-dd7"/>
                             <constraint firstItem="l6b-t0-gsw" firstAttribute="leading" secondItem="AsE-ZI-jZy" secondAttribute="leading" constant="20" id="l8u-Dy-O9O"/>
                         </constraints>
                     </view>
@@ -151,7 +153,7 @@
                     <connections>
                         <outlet property="ageLabel" destination="NFs-PS-SeE" id="93W-te-z9i"/>
                         <outlet property="houseLabel" destination="Yta-Kd-1sY" id="OMT-Oc-Gr4"/>
-                        <outlet property="nameLabel" destination="A8p-fr-r6V" id="iND-0I-842"/>
+                        <outlet property="nameLabel" destination="l6b-t0-gsw" id="8RG-cV-5Aq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zn-mT-TFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

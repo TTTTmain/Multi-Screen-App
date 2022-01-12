@@ -9,25 +9,25 @@ import UIKit
 
 class HouseViewController: UIViewController {
 
-    @IBOutlet var nameLabel: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var houseLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        guard let person = person else {
+            return
+        }
+        
+        nameLabel.text = "Name: \(person.name)"
+        ageLabel.text = "Age: \(person.age)"
+        houseLabel.text = "House: \(person.house)"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    var person: Person?
+    
+    
 
 }
