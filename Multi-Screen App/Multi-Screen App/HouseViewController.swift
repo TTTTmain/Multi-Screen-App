@@ -24,6 +24,22 @@ class HouseViewController: UIViewController {
         nameLabel.text = "Name: \(person.name)"
         ageLabel.text = "Age: \(person.age)"
         houseLabel.text = "House: \(person.house)"
+        
+        switch person.house {
+            case "Lannister":
+                houseLabel.textColor = UIColor(named: "LannisterColor")
+            case "Tully":
+                houseLabel.textColor = UIColor(named: "TullyColor")
+            case "Tyrell":
+                houseLabel.textColor = UIColor(named: "TyrellColor")
+            case "Stark":
+                houseLabel.textColor = UIColor(named: "StarkColor")
+            case "Baratheon":
+                houseLabel.textColor = UIColor(named: "BaratheonColor")
+            default:
+                houseLabel.textColor = UIColor.label
+            
+        }
     }
     
     var person: Person?
